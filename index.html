@@ -1,1 +1,64 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="img-content">
+      <div class="odin">
+        <img src="/img/odin-lined.png" alt="The odin Project symbol" id="odin-img">ODIN
+      </div>
+    </div>
+    <div class="form-content">
+      <p>This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams.<br>
+        Sign up <em>now</em> to get started. <br>
+        <br>
+        You <em>know</em> you want to.</p>
+      <div class="form-div">
+        <p>Let's do this</p>
+        <form action="#" method="post" id="accountform">
+          <div class="form-row">
+            <div class="input">
+              <label for="1st-name">First Name</label>
+              <input type="text" name="1st-name" id="1st-name" required>
+            </div>
+            <div class="input">
+              <label for="2nd-name">Second Name</label>
+              <input type="text" name="2nd-name" id="2nd-name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input">
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" placeholder="Optional">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input">
+              <label for="pwd">Password</label>
+              <input type="password" name="pwd" id="pwd" required class="error">
+            </div>
+            <div class="input">
+              <label for="confpwd">Confirm Password</label>
+              <input type="password" name="confpwd" id="confpwd" required class="error">
+            </div>
+          </div>  
+        </form>
+      </div>
+      <button type="submit" form="accountform">Create Account</button>
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+  </div>
+</body>
+</html>
